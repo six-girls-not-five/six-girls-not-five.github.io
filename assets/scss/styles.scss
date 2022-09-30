@@ -1,0 +1,88 @@
+body {
+    background-color: #f1f1c1;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    border-radius: 10px;
+    width: 80%;
+    height: 80vh;
+    background-color: #c7c77f;
+    font-weight: bold;
+    text-align: center;
+    h1 {
+        font-size: 30px;
+    }
+}
+
+.registration {
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+
+        label {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        input,
+        button {
+            width: 190px;
+            height: 30px;
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+        }
+
+        button {
+            margin-top: 5px;
+            height: 30px;
+            text-transform: uppercase;
+            background-color: #e0e0a8;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (min-width: 1279px) {
+    section {
+        border-radius: 10px;
+        width: 40%;
+        height: 80vh;
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    input, button {
+            width: 300px;
+        }
+
+        button {
+            margin-top: 20px;
+            height: 40px;
+        }
+}
